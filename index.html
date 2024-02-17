@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur v1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Calculateur de coûts de projet</h1>
+<div  >
+<form >
+  <div class="mb-3 container-md ">
+    <div id="nbemplois" class="row flexbox ">
+
+      <div class="col-4 p-4 p-md-2 border rounded-3 bg-body-tertiary" >
+        <div class="form-floating mb-3 ">
+            <input type="number" class="form-control" inputmode="numeric" id="Nbjob" value="1" placeholder="0">
+            <label for="Nnjob">Nombre emplois</label>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="EsubmitBtn" >Confirmer</button>
+          </div>
+      </div>
+</form>
+</div>
+<div style="margin-top: 20px;"></div>
+  <div class="container-md">
+      <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" id="Formmain">
+              
+              
+             <div class="form-floating mb-3">
+                <input type="number" class="form-control" inputmode="numeric" id="Costfixe" placeholder="0">
+                <label for="Costfixe">Coûts fixe</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="Contingence"  inputmode="numeric" placeholder="0">
+                <label for="Contingence">Contingence (%)</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit" id="submitBtn" >Calculer</button>
+              <hr class="my-4">
+             <h2 id="Costprojet"></h2>
+            </form>
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
